@@ -470,6 +470,30 @@ section .title::after{
 .contact .contact-content .left .icons{
     margin: 10px 0;
 }
+.follow{
+	font-size: 15px;
+	font-weight:bold;
+}
+.icon {
+  padding: 20px;
+  font-size: 30px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.icon:hover {
+    transform: scale(1.15);
+}
+.fa-facebook {
+  color: #3B5998;
+}
+.fa-instagram {
+  color: #E1306C;
+}
+.fa-linkedin {
+  color: #007bb5;
+}
 .contact .contact-content .row{
     display: flex;
     height: 65px;
@@ -582,6 +606,14 @@ footer span a:hover{
     }
 	.home .home-content{
 		margin-left:400px;
+	}
+	.home{
+    background: url("images/banner5.jpg") no-repeat center;
+	background-size:cover;
+	}
+	.home .home-content .text-3 span{
+	color:#fcdf77;
+	
 	}
 }
 
