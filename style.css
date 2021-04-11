@@ -1,3 +1,35 @@
+/* try 258*/
+#icon{
+    width  :25px;
+    cursor : pointer;
+    margin-left: 20px;
+}
+:root{
+    --primary-color:#fff;
+    --primary-image:url("images/bg1.jpg") no-repeat center;
+    
+}
+.dark-theme{
+    --primary-color:black;
+    --primary-image:url("images/light3.jpg") no-repeat center;
+}
+
+.about , .skills , .contact  {
+    background: var(--primary-image);
+    background-size: cover;
+    color: var(--primary-color);
+}
+
+.about .about-content .right{
+    color: var(--primary-color);
+}
+/*
+.about , .skills , .contact  {
+    background: var(--secondary-image);
+    background-size: cover;
+    color: var(--secondary-color);
+}
+*/
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
@@ -116,7 +148,7 @@ section .title::after{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 30px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
@@ -211,11 +243,19 @@ section .title::after{
     color: darkred ;
     background: none;
 }
-.about , .skills , .contact{
-	background: url("images/light3.jpg") no-repeat center;
+/*
+.about , .skills , .contact  {
+	background: url("images/bg1.jpg") no-repeat center;
 	background-size: cover;
-}
+    color: var(--primary-color);
+}*/
 /* about section styling */
+.contact .title::before,
+.about .title::before,
+.skills .title::before{
+    background: #fff;
+}
+
 .about .title::after{
     content: "Who i am";
 }
@@ -262,23 +302,23 @@ section .title::after{
 /* achievement section styling */
 .achievement {
 	color:#fff;
-	background: url("images/dark2.gif") no-repeat center;
+	background: url("images/bg1.jpg") no-repeat center;
 	background-size:cover;
 }
 .badges{
     color:#fff;
-	background: url("images/dark2.gif") no-repeat center;
+	background: url("images/bg1.jpg") no-repeat center;
 	background-size:cover;
 }
 .achievement .title::before,
 .badges .title::before{
     background: #fff;
 }
-.achievement .title::after,
-.badges .title::after{
-    background: #111;
-    content: "My Certificates";
+
+.achievement .title::after{
+    content: "Certificates";
 }
+
 
 .achievement .serv-content .card{
     background: #222;
@@ -389,7 +429,7 @@ section .title::after{
     content: "Badges";
 }
 .badges .carousel .card{
-    background: #222;
+    background: #111;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -510,7 +550,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: darked;
 }
 .contact .right form .fields{
     display: flex;
